@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevSpace — Dynamic</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <!-- ══════════════ NAVBAR ══════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <div class="brand-icon">D</div>
+      <span>DevSpace</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home"    class="nav-link active">Home</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="#todo"    class="nav-link">To-Do</a></li>
+      <li><a href="#gallery" class="nav-link">Gallery</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section class="hero" id="home">
+    <div class="blob blob-a"></div>
+    <div class="blob blob-b"></div>
+    <div class="blob blob-c"></div>
+
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-chip">
+          <span class="chip-dot"></span> Welcome
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm a<br/>
+          <span class="title-highlight">Web Developer</span><br/>
+          in the Making
+        </h1>
+        <p class="hero-desc">
+          Building clean, responsive &amp; interactive web experiences
+          using HTML, CSS &amp; JavaScript — one project at a time.
+        </p>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">4</span><span class="stat-label">Projects</span></div>
+          <div class="stat-sep"></div>
+          <div class="stat"><span class="stat-num">3</span><span class="stat-label">Skills</span></div>
+          <div class="stat-sep"></div>
+          <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Passion</span></div>
+        </div>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary"><i class="ri-mail-send-line"></i> Get In Touch</a>
+          <a href="#gallery" class="btn btn-outline"><i class="ri-image-2-line"></i> View Gallery</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-avatar-wrap">
+          <div class="hero-avatar"><i class="ri-user-smile-line"></i></div>
+          <div class="floating-card fc-html"><i class="ri-html5-line"></i> HTML5</div>
+          <div class="floating-card fc-css"><i class="ri-css3-line"></i> CSS3</div>
+          <div class="floating-card fc-js"><i class="ri-javascript-line"></i> JS</div>
+          <div class="floating-card fc-resp"><i class="ri-layout-responsive-line"></i> Responsive</div>
+          <div class="availability-badge"><span class="avail-dot"></span> Available Now</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════ FEATURES ══════════════ -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-eyebrow">What I Build</p>
+        <h2 class="section-title">Skills from This <em>Internship</em></h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card" data-aos>
+          <div class="fc-num">01</div>
+          <div class="fc-icon blue"><i class="ri-layout-4-line"></i></div>
+          <h3>Responsive Layouts</h3>
+          <p>Flexbox &amp; CSS Grid pages that look great on every device.</p>
+          <div class="fc-tags"><span>Flexbox</span><span>CSS Grid</span></div>
+        </div>
+        <div class="feature-card" data-aos>
+          <div class="fc-num">02</div>
+          <div class="fc-icon orange"><i class="ri-shield-check-line"></i></div>
+          <h3>Form Validation</h3>
+          <p>JS-powered checks ensuring clean, correct data before submit.</p>
+          <div class="fc-tags"><span>JavaScript</span><span>DOM</span></div>
+        </div>
+        <div class="feature-card" data-aos>
+          <div class="fc-num">03</div>
+          <div class="fc-icon green"><i class="ri-checkbox-circle-line"></i></div>
+          <h3>To-Do List</h3>
+          <p>Dynamic task manager — add, complete &amp; delete tasks live.</p>
+          <div class="fc-tags"><span>DOM Events</span><span>JS</span></div>
+        </div>
+        <div class="feature-card" data-aos>
+          <div class="fc-num">04</div>
+          <div class="fc-icon pink"><i class="ri-image-2-line"></i></div>
+          <h3>Image Gallery</h3>
+          <p>Add &amp; remove images dynamically with a lightbox preview.</p>
+          <div class="fc-tags"><span>JavaScript</span><span>CSS</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CONTACT FORM ══════════════ -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+
+        <div class="contact-left">
+          <p class="section-eyebrow">Say Hello</p>
+          <h2 class="section-title">Let's <em>Connect</em></h2>
+          <p class="contact-desc">Have a project idea or want to collaborate? Fill out the form — I'll reply within 24 hours.</p>
+          <div class="contact-list">
+            <div class="contact-row">
+              <div class="cr-icon"><i class="ri-mail-line"></i></div>
+              <div>
+                <span class="cr-label">Email</span>
+                <!-- ✏️ Replace with your real email address -->
+                <span class="cr-val">subhamofficial524@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="cr-icon"><i class="ri-map-pin-line"></i></div>
+              <div>
+                <span class="cr-label">Location</span>
+                <span class="cr-val">India · Remote</span>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="cr-icon"><i class="ri-time-line"></i></div>
+              <div>
+                <span class="cr-label">Response</span>
+                <span class="cr-val">Within 24 hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <form id="contactForm" novalidate>
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <div class="inp-wrap">
+                  <i class="ri-user-line"></i>
+                  <input type="text" id="firstName" placeholder="John" autocomplete="off" />
+                </div>
+                <span class="err" id="firstNameErr"></span>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <div class="inp-wrap">
+                  <i class="ri-user-line"></i>
+                  <input type="text" id="lastName" placeholder="Doe" autocomplete="off" />
+                </div>
+                <span class="err" id="lastNameErr"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <div class="inp-wrap">
+                <i class="ri-mail-line"></i>
+                <input type="email" id="email" placeholder="john@example.com" autocomplete="off" />
+              </div>
+              <span class="err" id="emailErr"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <div class="inp-wrap">
+                <i class="ri-chat-1-line"></i>
+                <input type="text" id="subject" placeholder="Project collaboration..." autocomplete="off" />
+              </div>
+              <span class="err" id="subjectErr"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <div class="inp-wrap">
+                <i class="ri-message-2-line" style="top:16px;transform:none;"></i>
+                <textarea id="message" rows="4" placeholder="Tell me about your idea..."></textarea>
+              </div>
+              <span class="err" id="messageErr"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span class="btn-text"><i class="ri-send-plane-line"></i> Send Message</span>
+              <span class="btn-loading hidden"><i class="ri-loader-4-line spin"></i> Sending...</span>
+            </button>
+          </form>
+
+          <div class="form-success hidden" id="successMsg">
+            <div class="success-circle"><i class="ri-check-double-line"></i></div>
+            <h3>Message Sent!</h3>
+            <p>Thanks for reaching out. I'll reply within 24 hours.</p>
+            <button class="btn btn-outline" id="resetFormBtn">Send Another</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ TO-DO LIST ══════════════ -->
+  <section class="todo-section" id="todo">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-eyebrow">Task Manager</p>
+        <h2 class="section-title">Dynamic <em>To-Do List</em></h2>
+        <p class="section-sub">Add, complete &amp; remove tasks — JavaScript DOM manipulation in action.</p>
+      </div>
+
+      <div class="todo-card">
+        <div class="todo-add-row">
+          <div class="todo-inp-box">
+            <i class="ri-add-circle-line"></i>
+            <input type="text" id="todoInput" placeholder="What needs to be done?" maxlength="80" />
+            <select id="todoCategory">
+              <option value="general">General</option>
+              <option value="work">Work</option>
+              <option value="personal">Personal</option>
+              <option value="urgent">Urgent</option>
+            </select>
+          </div>
+          <button class="btn btn-primary" id="addTodoBtn">
+            <i class="ri-add-line"></i> Add
+          </button>
+        </div>
+
+        <div class="todo-filters">
+          <button class="filter-btn active" data-filter="all">All <span id="countAll">0</span></button>
+          <button class="filter-btn" data-filter="active">Active <span id="countActive">0</span></button>
+          <button class="filter-btn" data-filter="completed">Done <span id="countDone">0</span></button>
+        </div>
+
+        <div class="todo-list" id="todoList">
+          <div class="todo-empty" id="todoEmpty">
+            <i class="ri-inbox-2-line"></i>
+            <p>No tasks yet. Add one above!</p>
+          </div>
+        </div>
+
+        <div class="todo-foot">
+          <span id="todoStats">0 tasks remaining</span>
+          <button class="clear-btn" id="clearCompleted">
+            <i class="ri-delete-bin-6-line"></i> Clear Completed
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ IMAGE GALLERY ══════════════ -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-eyebrow">Image Gallery</p>
+        <h2 class="section-title">Dynamic <em>Gallery</em></h2>
+        <p class="section-sub">Add images via URL or file upload — click to preview in lightbox, remove anytime.</p>
+      </div>
+
+      <div class="gallery-add-card">
+        <div class="gallery-add-fields">
+          <div class="ginp-wrap">
+            <i class="ri-links-line"></i>
+            <input type="url" id="galleryUrl" placeholder="Paste image URL..." />
+          </div>
+          <div class="ginp-wrap">
+            <i class="ri-text"></i>
+            <input type="text" id="galleryCaption" placeholder="Caption (optional)" maxlength="40" />
+          </div>
+          <div class="ginp-wrap ginp-select">
+            <i class="ri-price-tag-3-line"></i>
+            <select id="imgCategory">
+              <option value="other">Other</option>
+              <option value="nature">Nature</option>
+              <option value="city">City</option>
+              <option value="art">Art</option>
+            </select>
+          </div>
+        </div>
+        <div class="gallery-add-btns">
+          <button class="btn btn-primary" id="addImgBtn"><i class="ri-add-line"></i> Add Image</button>
+          <label class="btn btn-outline" for="fileUpload">
+            <i class="ri-upload-2-line"></i> Upload
+            <input type="file" id="fileUpload" accept="image/*" multiple hidden />
+          </label>
+        </div>
+      </div>
+
+      <div class="gallery-filters">
+        <button class="gf-btn active" data-cat="all">All</button>
+        <button class="gf-btn" data-cat="nature">Nature</button>
+        <button class="gf-btn" data-cat="city">City</button>
+        <button class="gf-btn" data-cat="art">Art</button>
+        <button class="gf-btn" data-cat="other">Other</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-empty" id="galleryEmpty">
+          <i class="ri-image-add-line"></i>
+          <p>No images yet. Add one above!</p>
+        </div>
+      </div>
+
+      <div class="gallery-foot" id="galleryStats">0 images</div>
+    </div>
+  </section>
+
+  <!-- ══════════════ LIGHTBOX ══════════════ -->
+  <div class="lightbox hidden" id="lightbox">
+    <div class="lb-backdrop" id="lbBackdrop"></div>
+    <div class="lb-content">
+      <button class="lb-close" id="lbClose"><i class="ri-close-line"></i></button>
+      <button class="lb-prev" id="lbPrev"><i class="ri-arrow-left-s-line"></i></button>
+      <div class="lb-img-wrap">
+        <img src="" alt="" id="lbImg" />
+        <div class="lb-caption" id="lbCaption"></div>
+      </div>
+      <button class="lb-next" id="lbNext"><i class="ri-arrow-right-s-line"></i></button>
+    </div>
+  </div>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <div class="brand-icon sm">D</div>
+        <span>DevSpace</span>
+      </div>
+
+      
+
+      <div class="footer-socials">
+        <!-- ✏️ Replace each href with your real profile URL -->
+        <a href="https://x.com/SubhamJana25681?t=zbu48bXaMk5h697xb57rOw&s=09" target="_blank" rel="noopener" class="social-icon" aria-label="X (Twitter)">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.259 5.63 5.905-5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/share/1GgrmhZvR4/" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/subham_jana___?igsh=cjIyZTIzcGpjNHI4&utm_source=ig_contact_invite" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+        <a href="https://pin.it/sIDtDfzbf" target="_blank" rel="noopener" class="social-icon" aria-label="Pinterest">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/subham-jana-bb33902b6" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://github.com/susofficialgitrepo-a11y" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+      </div>
+
+      <p class="footer-copy">© 2025 DevSpace · Built with HTML, CSS &amp; JavaScript</p>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
