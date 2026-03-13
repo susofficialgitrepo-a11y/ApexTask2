@@ -208,8 +208,8 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 🙋 Author
 
 **Subham Jana**
-- GitHub: [@yourusername](https://github.com/susofficialgitrepo-a11y)
-- LinkedIn: [yourprofile](https://linkedin.com/in/subham-jana-bb33902b6)
+- GitHub: https://github.com/susofficialgitrepo-a11y
+- LinkedIn: https://linkedin.com/in/subham-jana-bb33902b6
 - Email: subhamofficial524@gmail.com
 
 ---
